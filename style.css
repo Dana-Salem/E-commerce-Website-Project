@@ -1,0 +1,169 @@
+.bgImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgImagediv {
+    width: 100%;
+    height: 100%;
+    /*position: relative;*/
+    text-align: center;
+    color: white;
+}
+
+body {margin:0;
+    font-family:  sans-serif;
+    background-color: #333333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #ff9a00;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centeredGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* Bottom Centered text */
+.bottomCentered {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkout_button {
+    background-color: #ff9a00;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px 24px;
+}
+
+.formTextField {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+}
+
+.formButton {
+    background-color: #ff9a00;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.logo {
+    object-fit: cover;
+    float: right;
+    height: 20px;
+    font-weight: bold;
+    vertical-align:center;
+    padding: 2px;
+    color: #ff9a00;
+    font-family: Helvetica;
+    padding-right: 16px;
+    font-size: 36px;
+}
+
+.product{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+   .bgImage{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+       margin-top: 30px;
+    }
+     .bgImagediv {
+          width: 100%;
+          height: 100%;
+          /*position: relative;*/
+          text-align: center;
+          color: white;
+     }
+     .logo {
+        visibility: hidden;
+     }
+
+     ul {
+        height: 50px;
+     }
+
+        .centered {
+            font-size: 18px;
+            padding-top: 60px;
+        }
+
+        .centeredGrid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .product{
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+
+}
